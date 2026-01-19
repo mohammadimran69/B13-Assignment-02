@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+nav {
+    background-color: #1A0B2E;
+    padding: 16px 0;
+}
+
+
+.nav-container,
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.bg-linear {
+    background-image: linear-gradient(to top, #F7E93F, #FB09B4, #9100F8);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-btn {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+}
+
+.banner {
+    background: url(../assets/hero-bg.png);
+}
+
+.banner-container {
+    color: white;
+    text-align: center;
+}
+
+.about {
+    background-color: #1A0B2E;
+}
+
+.about-container {
+    padding: 50px 0 120px 0;
+}
+
+.about-section-content {
+    color: white;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 26px;
+    color: white;
+    opacity: 0.8;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+}
+
+.about-section-card-box {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.card-title {
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.card-description {
+    font-size: 1rem;
+    line-height: 20px;
+    color: white;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
