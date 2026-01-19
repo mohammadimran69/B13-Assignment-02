@@ -15,7 +15,8 @@ nav {
 
 
 .nav-container,
-.about-container {
+.about-container,
+.techwave-container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -37,6 +38,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-icon {
+    display: none;
 }
 
 .menu ul {
@@ -112,6 +117,7 @@ nav {
     color: #00FF88;
     font-size: 3rem;
     font-weight: 900;
+    margin-bottom: 10px;
 }
 
 .card-description {
@@ -121,11 +127,96 @@ nav {
     opacity: 0.8;
 }
 
+.techwave {
+    background-color: #230E3D;
+}
+
+.techwave-container {
+    padding: 120px 0;
+}
+
+.techwave-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.techwave-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    align-content: center;
+}
+
+.techwave-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.techwave-card img {
+    max-width: 60px;
+}
+
+.techwave-card-title {
+    font-size: 1.5rem;
+    margin: 16px 0;
+    color: white;
+}
+
+.techwave-description {
+    font-size: 1rem;
+    line-height: 24px;
+    color: white;
+    opacity: 0.6;
+}
+
+.card-1 {
+    grid-row: span 2;
+}
+
+.card-2,
+.card-3,
+.card-4 {
+    grid-column: span 2;
+}
 
 
+@media screen and (max-width:576px){
 
+    .nav-container,
+    .about-container,
+    .techwave-container {
+        width: 90%;
+    }
 
+    .logo {
+        font-size: 2.2rem;
+    }
 
-.hidden {
-    display: none;
+    .menu {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-icon {
+    display: inline-block;
+    }
+
+    .about-section-card-box {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+
+    .techwave-box {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
