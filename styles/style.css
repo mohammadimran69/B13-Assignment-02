@@ -109,8 +109,8 @@
   position: relative;
 }
 
-.banner-images{
-  transition: transform 2s ;
+.banner-images {
+  transition: transform 2s;
 }
 
 .banner-images:hover {
@@ -184,14 +184,14 @@
 }
 
 .badge {
-    background-color: #00FF88;
-    padding: 8px 16px;
-    font-weight: 600;
-    font-size: 18px;
-    border-radius: 20px;
-    position: absolute;
-    right: 100px;
-    top: 25px;
+  background-color: #00ff88;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 20px;
+  position: absolute;
+  right: 100px;
+  top: 25px;
 }
 
 .about {
@@ -498,6 +498,11 @@
     margin: 0 auto;
     gap: 40px;
     max-width: 450px;
+  }
+
+  .badge {
+    right: -10px;
+    top: 30px;
   }
 
   .linear-circle {
