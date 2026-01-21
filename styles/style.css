@@ -109,6 +109,14 @@
   position: relative;
 }
 
+.banner-images{
+  transition: transform 2s ;
+}
+
+.banner-images:hover {
+  transform: rotate(360deg);
+}
+
 .linear-circle {
   position: relative;
   left: 0%;
@@ -117,7 +125,8 @@
 
 .mic-phn {
   position: absolute;
-  top: 16%;
+  /* top: 16%; */
+  top: 80px;
   left: 40%;
 }
 
@@ -438,7 +447,8 @@
 }
 
 @media screen and (max-width: 576px) {
-  .navbar,.banner,
+  .navbar,
+  .banner,
   .about,
   .techwave,
   .featured-section,
